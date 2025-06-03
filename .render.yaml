@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-stats-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TOKEN
+        value: 7641354923:AAHxmBTmztnS16OHqcWhgAZe5YF8aQLh8Lk
+      - key: CHANNEL_ID
+        value: @qixi15
